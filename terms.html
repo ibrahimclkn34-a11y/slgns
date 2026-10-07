@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Terms of Use — Solgens LLC</title>
+<meta name="description" content="Terms governing use of the Solgens LLC website." />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --black:  #0a0908;
+    --dark:   #131110;
+    --card:   #161412;
+    --gold:   #c9a84c;
+    --gold2:  #e2c47a;
+    --cream:  #f0ede6;
+    --muted:  rgba(240,237,230,0.6);
+    --border: rgba(201,168,76,0.18);
+    --serif:  'Cormorant Garamond', Georgia, serif;
+    --sans:   'Montserrat', sans-serif;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--black); color: var(--cream); font-family: var(--sans); font-weight: 300; line-height: 1.7; }
+
+  header {
+    padding: 28px 52px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { font-family: var(--serif); font-size: 1.4rem; color: var(--gold2); text-decoration: none; letter-spacing: .04em; }
+  header a.back { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); text-decoration: none; }
+  header a.back:hover { color: var(--cream); }
+
+  main { max-width: 760px; margin: 0 auto; padding: 64px 24px 100px; }
+  .eyebrow { font-size: .68rem; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(2.4rem, 5vw, 3.4rem); margin-top: 18px; color: var(--cream); }
+  .updated { margin-top: 18px; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-family: var(--sans); }
+
+  section.block { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
+  section.block h2 { font-family: var(--serif); font-weight: 500; font-size: 1.5rem; color: var(--cream); }
+  section.block p { margin-top: 14px; color: var(--muted); font-size: .98rem; }
+  a { color: var(--gold2); }
+
+  footer { border-top: 1px solid var(--border); padding: 32px 52px; text-align: center; font-size: .7rem; letter-spacing: .1em; color: var(--muted); }
+</style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">SOLGENS</a>
+    <a href="index.html" class="back">← Back to Solgens LLC</a>
+  </header>
+
+  <main>
+    <div class="eyebrow">— Legal</div>
+    <h1>Terms of Use</h1>
+    <div class="updated" id="updated"></div>
+
+    <section class="block">
+      <h2>1. Acceptance of these terms</h2>
+      <p>
+        These Terms of Use govern your access to and use of this website, operated
+        by Solgens LLC ("Solgens," "we," "us," "our"). By accessing this website,
+        you agree to these terms. If you do not agree, please do not use this
+        website.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>2. Informational purpose only</h2>
+      <p>
+        The content on this website — including descriptions of our brands,
+        capabilities, and company information — is provided for general
+        informational purposes only. It does not constitute a binding offer,
+        solicitation, or commitment, and no contractual relationship is formed
+        through use of this website. Any actual engagement, acquisition, or
+        partnership is governed exclusively by a separately negotiated and signed
+        written agreement.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>3. Intellectual property</h2>
+      <p>
+        All text, graphics, logos, and other content on this website are the
+        property of Solgens LLC or its licensors and are protected by applicable
+        intellectual property laws. You may not reproduce, distribute, or create
+        derivative works from this content without our prior written consent.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>4. No warranty</h2>
+      <p>
+        This website and its content are provided "as is" without warranties of
+        any kind, express or implied, including as to accuracy, completeness, or
+        availability. We do not guarantee the website will be uninterrupted or
+        error-free.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>5. Limitation of liability</h2>
+      <p>
+        To the fullest extent permitted by law, Solgens LLC shall not be liable
+        for any indirect, incidental, or consequential damages arising from your
+        use of, or inability to use, this website.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>6. Changes to these terms</h2>
+      <p>
+        We may revise these terms at any time by updating this page. Continued use
+        of the website after changes are posted constitutes acceptance of the
+        revised terms.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>7. Governing law</h2>
+      <p>
+        These terms are governed by the laws of the State of Wyoming, United
+        States, without regard to its conflict-of-law provisions.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>8. Contact</h2>
+      <p>
+        Questions about these terms can be directed to
+        <a href="mailto:info@solgensllc.com">info@solgensllc.com</a> or
+        <a href="mailto:support@solgensllc.com">support@solgensllc.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Solgens LLC · Wyoming, United States
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('updated').textContent = 'Last updated: ' + new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
+  </script>
+</body>
+</html>
